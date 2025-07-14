@@ -1,8 +1,4 @@
-
 VAR
-
-END_VAR
-
-VAR CONSTANT
-
+	StartButton : BOOL;
+	MixButton : BOOL;
 END_VAR

@@ -1,4 +1,11 @@
 VAR
-	StartButton : BOOL;
-	StopButton : BOOL;
+	Control : ControlType;
+	Tank : TankLvl;
+
+	TimerMix : TON;
+	diSwitch : BOOL;
+END_VAR
+
+VAR CONSTANT
+	Full : UINT := 10000;
 END_VAR

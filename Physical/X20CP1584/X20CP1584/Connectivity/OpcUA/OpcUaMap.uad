@@ -4,24 +4,40 @@
   <Aliases>
     <ACLAliases />
     <EURangeViolationAliases />
-    <EURangesAliases />
+    <EURangesAliases>
+      <EURanges Id="1">
+        <EURange>
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">100</High>
+        </EURange>
+      </EURanges>
+    </EURangesAliases>
     <EngineeringUnitAliases />
   </Aliases>
   <DefaultView>
     <Module Name="&lt;Default&gt;">
-      <Task Name="Operation">
+      <GlobalVariables>
+        <Variable Name="gMieszadlo" />
+        <Variable Name="gZb1_poziom" />
+        <Variable Name="gZb1_zawor" />
+        <Variable Name="gZb2_poziom" />
+        <Variable Name="gZb2_zawor" />
+        <Variable Name="gZb3_poziom" />
+        <Variable Name="gZb3_zawor_glowny" />
+        <Variable Name="gZb3_zawor_lewy" EURangesId="1" />
+        <Variable Name="gZb3_zawor_prawy" EURangesId="1" />
         <Variable Name="StartButton" />
-        <Variable Name="StopButton" />
-      </Task>
+        <Variable Name="MixButton" />
+      </GlobalVariables>
       <Task Name="ClockSigna">
         <Variable Name="Clock" />
-        <Variable Name="ClockStatus" />
         <Variable Name="Mixer" />
-        <Variable Name="MixerStatus" />
-        <Variable Name="TON_0" RecursiveEnable="2" />
-        <Variable Name="TON_1" RecursiveEnable="2" />
       </Task>
-      <Task Name="Tanks" />
+      <Task Name="Operation">
+        <Variable Name="Control" />
+        <Variable Name="Full" />
+        <Variable Name="Tank" RecursiveEnable="2" />
+      </Task>
     </Module>
   </DefaultView>
 </OpcUaSource>
