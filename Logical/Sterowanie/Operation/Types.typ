@@ -17,4 +17,14 @@ TYPE
 		zb2 : USINT;
 		zb3 : USINT;
 	END_STRUCT;
+	AnalogValue : 	STRUCT 
+		ValveRight : USINT;
+		ValveLeft : USINT;
+	END_STRUCT;
+	CurrentTask : 	STRUCT 
+		Start : USINT;
+		Stop : USINT;
+		Nalewanie : USINT;
+		Mieszanie : USINT;
+	END_STRUCT;
 END_TYPE

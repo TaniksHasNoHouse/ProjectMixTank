@@ -1,20 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="ContentMainPage" height="700" width="1130" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.NumericOutput" id="TankLvl1" top="270" left="180" zIndex="0" />
-    <Widget xsi:type="widgets.brease.NumericOutput" id="TankLvl2" top="330" left="180" zIndex="1" />
-    <Widget xsi:type="widgets.brease.NumericOutput" id="TankLvl3" top="390" left="180" zIndex="2" />
-    <Widget xsi:type="widgets.brease.Label" id="LabelPoziomCieczy" top="220" left="180" width="110" zIndex="3" text="Poziom cieczy" textAlign="center" fontSize="16px" />
-    <Widget xsi:type="widgets.brease.Label" id="LabelTank1" top="270" left="130" zIndex="4" text="Zbiornik 1" fontSize="16px" />
-    <Widget xsi:type="widgets.brease.Label" id="LabelTank2" top="330" left="130" zIndex="5" text="Zbiornik 2" fontSize="16px" />
-    <Widget xsi:type="widgets.brease.Label" id="LabelTank3" top="390" left="130" zIndex="6" text="Zbiornik 3" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="TankLvl1" top="140" left="220" zIndex="0" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="TankLvl2" top="200" left="220" zIndex="1" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="TankLvl3" top="260" left="220" zIndex="2" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelPoziomCieczy" top="90" left="120" width="141" zIndex="3" text="Poziom cieczy:" textAlign="center" fontSize="20px" style="Information" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelTank1" top="140" left="140" zIndex="4" text="Zbiornik 1" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelTank2" top="200" left="140" zIndex="5" text="Zbiornik 2" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelTank3" top="260" left="140" zIndex="6" text="Zbiornik 3" fontSize="16px" />
     <Widget xsi:type="widgets.brease.Label" id="LabelMainPage" top="29" left="70" width="160" height="51" zIndex="7" text="Main Page" fontSize="24px" />
-    <Widget xsi:type="widgets.brease.Label" id="LabelStanPracy" top="100" left="570" zIndex="8" text="Stan pracy" textAlign="center" fontSize="16px" />
-    <Widget xsi:type="widgets.brease.Label" id="StanPracy" top="140" left="570" zIndex="9" text="Label1" fontSize="16px" />
-    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleStart" top="110" left="730" width="120" height="50" zIndex="10" text="Start" style="Operate" />
-    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleMix" top="180" left="730" width="120" height="50" zIndex="11" text="Mix" style="Operate" />
-    <Widget xsi:type="widgets.brease.ProgressBar" id="ProgressBarZb1" top="270" left="310" zIndex="12" />
-    <Widget xsi:type="widgets.brease.ProgressBar" id="ProgressBarZb2" top="330" left="310" zIndex="13" />
-    <Widget xsi:type="widgets.brease.ProgressBar" id="ProgressBarZb3" top="390" left="310" zIndex="14" />
+    <Widget xsi:type="widgets.brease.Label" id="StanPracy" top="460" left="850" zIndex="8" text="Label1" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleStart" top="80" left="960" width="120" height="50" zIndex="9" text="Start" style="Operate" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleMix" top="240" left="960" width="120" height="50" zIndex="10" text="Mix" style="Operate" />
+    <Widget xsi:type="widgets.brease.ProgressBar" id="ProgressBarZb1" top="140" left="340" zIndex="11" />
+    <Widget xsi:type="widgets.brease.ProgressBar" id="ProgressBarZb2" top="200" left="340" zIndex="12" />
+    <Widget xsi:type="widgets.brease.ProgressBar" id="ProgressBarZb3" top="260" left="340" zIndex="13" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleStop" top="160" left="960" width="120" height="50" zIndex="14" text="Stop" style="Operate" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelValve1" top="320" left="110" width="280" zIndex="15" text="Procent otwarcia zworu ZB3 prawego:" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelValve2" top="380" left="110" width="280" zIndex="16" text="Procent otwarcia zworu ZB3 lewego:" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumInputValve1" top="320" left="420" zIndex="17" value="50" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumInputValve2" top="380" left="420" zIndex="18" value="50" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelProcessControl" top="29" left="933" width="174" zIndex="19" text="Kontrola procesu:" textAlign="center" fontSize="20px" style="Information" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelValZB1" top="500" left="110" width="160" zIndex="20" text="Zawór zbiornika ZB1:" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelValZB2" top="550" left="110" width="160" zIndex="21" text="Zawór zbiornika ZB2:" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelValMain" top="600" left="110" width="150" zIndex="22" text="Zawór przelewowy:" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelMixer" top="650" left="110" zIndex="23" text="Mieszadło:" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelState" top="450" left="110" width="191" zIndex="24" text="Stan komponentów:" fontSize="20px" style="Information" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelProcessState" top="400" left="780" width="200" zIndex="25" text="Stan pracy maszyny:" fontSize="20px" style="Information" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TBValve1" top="495" left="300" width="40" height="40" zIndex="26" borderWidth="3px" cornerRadius="30px" backColor="rgba(255, 0, 0, 1)" disabledBackColor="rgba(255, 0, 0, 1)" borderColor="rgba(0, 0, 0, 1)" disabledBorderColor="rgba(0, 0, 0, 1)" checkedBackColor="rgba(0, 255, 0, 1)" checkedBorderColor="rgba(211, 211, 211, 1)" disabledCheckedBackColor="rgba(0, 255, 0, 1)" disabledCheckedBorderColor="rgba(0, 0, 0, 1)" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TBValve2" top="545" left="300" width="40" height="40" zIndex="27" borderWidth="3px" cornerRadius="30px" backColor="rgba(255, 0, 0, 1)" disabledBackColor="rgba(255, 0, 0, 1)" borderColor="rgba(0, 0, 0, 1)" disabledBorderColor="rgba(0, 0, 0, 1)" checkedBackColor="rgba(0, 255, 0, 1)" checkedBorderColor="rgba(211, 211, 211, 1)" disabledCheckedBackColor="rgba(0, 255, 0, 1)" disabledCheckedBorderColor="rgba(0, 0, 0, 1)" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TBValveMain" top="595" left="300" width="40" height="40" zIndex="28" borderWidth="3px" cornerRadius="30px" backColor="rgba(255, 0, 0, 1)" disabledBackColor="rgba(255, 0, 0, 1)" borderColor="rgba(0, 0, 0, 1)" disabledBorderColor="rgba(0, 0, 0, 1)" checkedBackColor="rgba(0, 255, 0, 1)" checkedBorderColor="rgba(211, 211, 211, 1)" disabledCheckedBackColor="rgba(0, 255, 0, 1)" disabledCheckedBorderColor="rgba(0, 0, 0, 1)" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TBMix" top="645" left="300" width="40" height="40" zIndex="29" borderWidth="3px" cornerRadius="30px" backColor="rgba(255, 0, 0, 1)" disabledBackColor="rgba(255, 0, 0, 1)" borderColor="rgba(0, 0, 0, 1)" disabledBorderColor="rgba(0, 0, 0, 1)" checkedBackColor="rgba(0, 255, 0, 1)" checkedBorderColor="rgba(211, 211, 211, 1)" disabledCheckedBackColor="rgba(0, 255, 0, 1)" disabledCheckedBorderColor="rgba(0, 0, 0, 1)" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TBValve3" top="480" left="370" width="40" height="40" zIndex="30" borderWidth="3px" cornerRadius="30px" backColor="rgba(0, 255, 0, 1)" disabledBackColor="rgba(0, 255, 0, 1)" borderColor="rgba(0, 0, 0, 1)" disabledBorderColor="rgba(0, 0, 0, 1)" checkedBackColor="rgba(0, 255, 0, 1)" checkedBorderColor="rgba(211, 211, 211, 1)" disabledCheckedBorderColor="rgba(0, 0, 0, 1)" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TBValve4" top="530" left="370" width="40" height="40" zIndex="31" borderWidth="3px" cornerRadius="30px" backColor="rgba(255, 0, 0, 1)" disabledBackColor="rgba(0, 255, 0, 1)" borderColor="rgba(0, 0, 0, 1)" disabledBorderColor="rgba(0, 0, 0, 1)" checkedBackColor="rgba(0, 255, 0, 1)" checkedBorderColor="rgba(211, 211, 211, 1)" disabledCheckedBackColor="rgba(0, 255, 0, 1)" disabledCheckedBorderColor="rgba(0, 0, 0, 1)" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TBValve5" top="590" left="370" width="40" height="40" zIndex="32" borderWidth="3px" cornerRadius="30px" backColor="rgba(255, 0, 0, 1)" disabledBackColor="rgba(0, 255, 0, 1)" borderColor="rgba(0, 0, 0, 1)" disabledBorderColor="rgba(0, 0, 0, 1)" checkedBackColor="rgba(0, 255, 0, 1)" checkedBorderColor="rgba(211, 211, 211, 1)" disabledCheckedBackColor="rgba(0, 255, 0, 1)" disabledCheckedBorderColor="rgba(0, 0, 0, 1)" enable="false" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TBValve6" top="640" left="380" width="40" height="40" zIndex="33" borderWidth="3px" cornerRadius="30px" backColor="rgba(255, 0, 0, 1)" disabledBackColor="rgba(0, 255, 0, 1)" borderColor="rgba(0, 0, 0, 1)" disabledBorderColor="rgba(0, 0, 0, 1)" checkedBackColor="rgba(0, 255, 0, 1)" checkedBorderColor="rgba(211, 211, 211, 1)" disabledCheckedBackColor="rgba(0, 255, 0, 1)" disabledCheckedBorderColor="rgba(0, 0, 0, 1)" enable="false" />
   </Widgets>
 </Content>

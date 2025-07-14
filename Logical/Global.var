@@ -1,4 +1,5 @@
 VAR
 	StartButton : BOOL;
 	MixButton : BOOL;
+	StopButton : BOOL;
 END_VAR

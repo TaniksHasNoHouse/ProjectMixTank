@@ -13,10 +13,14 @@ PROGRAM _INIT
 	gMieszadlo;
 	StartButton := FALSE;
 	MixButton := FALSE;
+	
+	AnalogValve.ValveRight := 50;
+	AnalogValve.ValveLeft := 50;
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	IF StartButton = FALSE THEN
+	IF StopButton THEN
+		StartButton := FALSE;
 		Control.Step := STEP_START;
 	END_IF;
 	CASE Control.Step OF
@@ -31,6 +35,7 @@ PROGRAM _CYCLIC
 			END_IF;
 
 		STEP_FILL12:
+			StartButton := FALSE;
 			gZb1_zawor := TRUE;
 			gZb2_zawor := TRUE;
 			IF gZb1_poziom >=8000 AND gZb2_poziom >= 8000 THEN
@@ -43,14 +48,14 @@ PROGRAM _CYCLIC
 			Control.Step := STEP_FILL3;
 
 		STEP_FILL3:
-			gZb3_zawor_prawy := TRUE;
-			gZb3_zawor_lewy := TRUE;
+			gZb3_zawor_prawy := AnalogValve.ValveRight;
+			gZb3_zawor_lewy := AnalogValve.ValveLeft;
 			IF gZb3_poziom >=8000 AND gMieszadlo = FALSE THEN
 				gZb3_zawor_prawy := FALSE;
 				gZb3_zawor_lewy := FALSE;
 				Control.Step := STEP_EMPTY3;
 			END_IF;
-			IF gZb3_poziom >=8000 AND gMieszadlo = TRUE THEN
+			IF gZb3_poziom = 10000 AND gMieszadlo = TRUE THEN
 				gZb3_zawor_prawy := FALSE;
 				gZb3_zawor_lewy := FALSE;
 				Control.Step := STEP_MIX;
@@ -73,9 +78,9 @@ PROGRAM _CYCLIC
 			END_IF;
 	END_CASE;
 	
-	Tank.zb1 := INT_TO_USINT((gZb1_poziom *100) / Full);
-	Tank.zb2 := INT_TO_USINT((gZb2_poziom *100) / Full);
-	Tank.zb3 := INT_TO_USINT((gZb3_poziom *100) / Full);
+	Tank.zb1 := INT_TO_USINT((gZb1_poziom * 100) / Full);
+	Tank.zb2 := INT_TO_USINT((gZb2_poziom * 100) / Full);
+	Tank.zb3 := INT_TO_USINT((gZb3_poziom * 100) / Full);
 	
 	TimerMix();
 	

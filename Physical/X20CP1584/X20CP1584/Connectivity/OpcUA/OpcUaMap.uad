@@ -28,6 +28,7 @@
         <Variable Name="gZb3_zawor_prawy" EURangesId="1" />
         <Variable Name="StartButton" />
         <Variable Name="MixButton" />
+        <Variable Name="StopButton" />
       </GlobalVariables>
       <Task Name="ClockSigna">
         <Variable Name="Clock" />
@@ -37,7 +38,10 @@
         <Variable Name="Control" />
         <Variable Name="Full" />
         <Variable Name="Tank" RecursiveEnable="2" />
+        <Variable Name="TimerMix" RecursiveEnable="2" />
+        <Variable Name="AnalogValve" RecursiveEnable="2" />
       </Task>
+      <Task Name="Tanks" />
     </Module>
   </DefaultView>
 </OpcUaSource>
