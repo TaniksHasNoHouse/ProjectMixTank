@@ -1,0 +1,4 @@
+VAR
+	StartButton : BOOL;
+	StopButton : BOOL;
+END_VAR

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="ContentMainPage_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb1_poziom" attribute="node" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="TankLvl1" attribute="node" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb2_poziom" attribute="node" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="TankLvl2" attribute="node" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb3_poziom" attribute="node" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="TankLvl3" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Operation:StartButton" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="ToggleStart" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Operation:StopButton" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="ToggleStop" attribute="value" />
+</Binding>
+</Bindings>
+</BindingsSet>
