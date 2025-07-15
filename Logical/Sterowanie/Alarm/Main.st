@@ -22,6 +22,14 @@ PROGRAM _CYCLIC
 	IF gZb2_poziom < 8000.0 THEN
 		MpAlarmXReset(gAlarmXCore, 'LvLTank2IsTooHigh');
 	END_IF;
+	
+	IF gZb3_poziom > 8000.0 THEN
+		MpAlarmXSet(gAlarmXCore, 'LvLTank3IsTooHigh');
+	END_IF;
+	
+	IF gZb3_poziom < 8000.0 THEN
+		MpAlarmXReset(gAlarmXCore, 'LvLTank3IsTooHigh');
+	END_IF;
 	//Pressure 1
 	IF PressureTank1 > 4.0 THEN
 		MpAlarmXSet(gAlarmXCore, 'PressureTank1TooHigh');

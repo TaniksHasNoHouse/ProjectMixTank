@@ -4,7 +4,8 @@
     <Widget xsi:type="widgets.brease.NavigationBar" id="NavigationBar" top="0" left="0" height="300" zIndex="0" childPositioning="relative">
       <Widgets>
         <Widget xsi:type="widgets.brease.NavigationButton" id="MainPageButton" top="0" left="0" width="140" height="60" zIndex="0" pageId="MainPageInterface" text="MainPage" margin="5px" />
-        <Widget xsi:type="widgets.brease.NavigationButton" id="AlarmPageButton" top="0" left="0" width="140" height="60" zIndex="1" pageId="AlarmPageInterface" text="AlarmPage" margin="5px" />
+        <Widget xsi:type="widgets.brease.NavigationButton" id="AlarmPageButton" top="0" left="0" width="140" height="60" zIndex="1" pageId="AlarmPageInterface" text="AlarmPage" margin="5px" permissionOperate="['Operator', 'Service']" />
+        <Widget xsi:type="widgets.brease.NavigationButton" id="RecipePageButton" top="0" left="0" width="140" height="60" zIndex="2" pageId="RecipePageInterface" text="RecipePage" margin="5px" />
       </Widgets>
     </Widget>
   </Widgets>

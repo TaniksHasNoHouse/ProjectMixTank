@@ -4,6 +4,7 @@
   <Pages>
     <Page refId="MainPageInterface" />
     <Page refId="AlarmPageInterface" />
+    <Page refId="RecipePageInterface" />
   </Pages>
   <Navigations />
   <BindingsSets>
@@ -14,6 +15,7 @@
     <EventBindingsSet refId="ContentAlarmPage_eventbinding" />
     <EventBindingsSet refId="ContentTop_eventbinding" />
     <EventBindingsSet refId="ContentLogin_eventbinding" />
+    <EventBindingsSet refId="ContentRecipePage_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialog" />
@@ -24,6 +26,7 @@
     <Content refId="ContentMainPage" />
     <Content refId="ContentAlarmPage" />
     <Content refId="ContentLogin" />
+    <Content refId="ContentRecipePage" />
   </Contents>
   <SnippetsSets />
   <VariablesSets />

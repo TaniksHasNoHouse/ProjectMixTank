@@ -6,5 +6,6 @@
     <Object Type="Program" Language="IEC">Tanks</Object>
     <Object Type="Program" Language="IEC">Operation</Object>
     <Object Type="Program" Language="IEC">Alarm</Object>
+    <Object Type="Program" Language="IEC">Recipe</Object>
   </Objects>
 </Package>

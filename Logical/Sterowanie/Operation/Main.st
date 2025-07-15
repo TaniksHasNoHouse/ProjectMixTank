@@ -50,8 +50,17 @@ PROGRAM _CYCLIC
 		STEP_FILL12:
 			State := 'Napelnianie 1/2';
 			StartButton := FALSE;
-			gZb1_zawor := TRUE;
-			gZb2_zawor := TRUE;
+			IF gZb1_poziom >=8000 THEN
+				gZb1_zawor := FALSE;
+			ELSE
+				gZb1_zawor := TRUE;
+			END_IF;
+			
+			IF gZb2_poziom >=8000 THEN
+				gZb2_zawor := FALSE;
+			ELSE
+				gZb2_zawor := TRUE;
+			END_IF;
 			IF gZb1_poziom >=8000 AND gZb2_poziom >= 8000 THEN
 				Control.Step := STEP_EMPTY12;
 			END_IF;

@@ -8,9 +8,9 @@
         <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListState" zIndex="2" columnType="state" text="State" />
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.Button" id="AcknowledgeButton" top="640" left="190" zIndex="1" text="Ack" style="Operate" />
-    <Widget xsi:type="widgets.brease.Button" id="AcknowledgeAllButton" top="640" left="410" zIndex="2" text="Ack All" style="Operate" />
-    <Widget xsi:type="widgets.brease.Label" id="LabelAlarmPage" top="29" left="70" width="160" height="51" zIndex="3" text="Alarm Page" textAlign="center" fontSize="24px" />
+    <Widget xsi:type="widgets.brease.Button" id="AcknowledgeButton" top="640" left="190" zIndex="1" text="Ack" permissionOperate="['Operator', 'Service']" style="Operate" />
+    <Widget xsi:type="widgets.brease.Button" id="AcknowledgeAllButton" top="640" left="410" zIndex="2" text="Ack All" permissionOperate="['Operator', 'Service']" style="Operate" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelAlarmPage" top="29" left="70" width="160" height="51" zIndex="3" text="Alarm Page" textAlign="left" fontSize="24px" />
     <Widget xsi:type="widgets.brease.Login" id="Login1" top="20" left="260" zIndex="4" />
   </Widgets>
 </Content>

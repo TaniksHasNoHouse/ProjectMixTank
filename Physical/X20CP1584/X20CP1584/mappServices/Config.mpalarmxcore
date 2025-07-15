@@ -38,6 +38,12 @@
         <Property ID="Code" Value="5" />
         <Selector ID="Behavior" Value="PersistentAlarm" />
       </Group>
+      <Group ID="[6]">
+        <Property ID="Name" Value="LvLTank3IsTooHigh" />
+        <Property ID="Message" Value="Fluid level in tank 3 is above 80%!" />
+        <Property ID="Code" Value="6" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
     </Group>
   </Element>
 </Configuration>
