@@ -4,5 +4,9 @@
     <Widget xsi:type="widgets.brease.TextPad" id="TextPad1" top="60" left="90" width="950" height="440" zIndex="0" />
     <Widget xsi:type="widgets.brease.Button" id="ButtonOpen" top="590" left="140" zIndex="1" text="Open" fontSize="20px" style="Command1" />
     <Widget xsi:type="widgets.brease.Button" id="ButtonSave" top="590" left="290" zIndex="2" text="Save" fontSize="20px" style="Command1" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput1" top="520" left="530" zIndex="3" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput2" top="520" left="680" zIndex="4" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput3" top="520" left="830" zIndex="5" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput4" top="520" left="990" zIndex="6" />
   </Widgets>
 </Content>
