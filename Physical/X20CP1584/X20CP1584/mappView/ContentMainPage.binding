@@ -54,5 +54,109 @@
 
 
 
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Operation:State" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="WorkState" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb1_zawor" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="TBValve1" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb2_zawor" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="TBValve2" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gZb3_zawor_glowny" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="TBValveMain" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:MixButton" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="TBMix" attribute="value" />
+</Binding>
+
+
+
+
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::Alarm:PressureTank2" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="NOPressureT2" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::Alarm:PressureTank1" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="NOPressureT1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Alarm:PressureTank2" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="BasicSlider2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Alarm:PressureTank1" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="BasicSlider1" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::Alarm:PressureTank1" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="RadialGaugeVal1" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::Alarm:PressureTank2" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="RadialGaugeVal2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Operation:ToggleMode" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="ToggleSwitch1" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::Operation:Mode" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="TextOutputManual" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::Operation:ToggleMode" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="ToggleSwitchZB2" attribute="enable" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::Operation:ToggleMode" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="ToggleSwitchZB1" attribute="enable" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::Operation:ToggleMode" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="ToggleSwitchZBMain" attribute="enable" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::Operation:ToggleMode" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="ToggleSwitchMix" attribute="enable" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::Operation:ToggleMode" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="ToggleSwitchZB4" attribute="enable" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::Operation:ToggleMode" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="ToggleSwitchZB3" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Operation:Manual.ZB3_right" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="ToggleSwitchZB3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Operation:Manual.ZBMain" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="ToggleSwitchZBMain" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Operation:Manual.ZB2" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="ToggleSwitchZB2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Operation:Manual.ZB1" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="ToggleSwitchZB1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Operation:Manual.ZB3_left" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="ToggleSwitchZB4" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Operation:Manual.ZBMix" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentMainPage" widgetRefId="ToggleSwitchMix" attribute="value" />
+</Binding>
 </Bindings>
 </BindingsSet>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="gAlarmXCore" Type="mpalarmxcore">
+    <Group ID="mapp.AlarmX.Core.Configuration">
+      <Group ID="[0]">
+        <Property ID="Name" Value="LvLTank1IsTooHigh" />
+        <Property ID="Message" Value="Fluid level in tank 1 is above 80%!" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[1]">
+        <Property ID="Name" Value="LvLTank2IsTooHigh" />
+        <Property ID="Message" Value="Fluid level in tank 2 is above 80%!" />
+        <Property ID="Code" Value="1" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[2]">
+        <Property ID="Name" Value="PressureTank1TooHigh" />
+        <Property ID="Message" Value="Pressure in tank 1 is too high!" />
+        <Property ID="Code" Value="2" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[3]">
+        <Property ID="Name" Value="PressureTank2TooHigh" />
+        <Property ID="Message" Value="Pressure in tank 2 is too high!" />
+        <Property ID="Code" Value="3" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[4]">
+        <Property ID="Name" Value="PressureTank1TooLow" />
+        <Property ID="Message" Value="Pressure in tank 1 is too low!" />
+        <Property ID="Code" Value="4" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[5]">
+        <Property ID="Name" Value="PressureTank2TooLow" />
+        <Property ID="Message" Value="Pressure in tank 2 is too low!" />
+        <Property ID="Code" Value="5" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+    </Group>
+  </Element>
+</Configuration>

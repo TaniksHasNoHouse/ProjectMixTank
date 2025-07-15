@@ -8,14 +8,22 @@
   <Navigations />
   <BindingsSets>
     <BindingsSet refId="ContentMainPage_binding" />
+    <BindingsSet refId="ContentAlarmPage_binding" />
   </BindingsSets>
-  <EventBindingsSets />
-  <Dialogs />
+  <EventBindingsSets>
+    <EventBindingsSet refId="ContentAlarmPage_eventbinding" />
+    <EventBindingsSet refId="ContentTop_eventbinding" />
+    <EventBindingsSet refId="ContentLogin_eventbinding" />
+  </EventBindingsSets>
+  <Dialogs>
+    <Dialog refId="LoginDialog" />
+  </Dialogs>
   <Contents>
     <Content refId="ContentTop" />
     <Content refId="ContentLeft" />
     <Content refId="ContentMainPage" />
     <Content refId="ContentAlarmPage" />
+    <Content refId="ContentLogin" />
   </Contents>
   <SnippetsSets />
   <VariablesSets />

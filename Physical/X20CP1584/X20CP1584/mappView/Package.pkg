@@ -7,5 +7,9 @@
     <Object Type="Package">VisuDef</Object>
     <Object Type="Package">VisuInterface</Object>
     <Object Type="File">ContentMainPage.binding</Object>
+    <Object Type="File">ContentAlarmPage.eventbinding</Object>
+    <Object Type="File">ContentAlarmPage.binding</Object>
+    <Object Type="File">ContentTop.eventbinding</Object>
+    <Object Type="File">ContentLogin.eventbinding</Object>
   </Objects>
 </Package>

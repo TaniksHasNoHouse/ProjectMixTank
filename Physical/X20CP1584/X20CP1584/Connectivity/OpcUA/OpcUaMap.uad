@@ -2,7 +2,26 @@
 <?AutomationStudio FileVersion="4.9"?>
 <OpcUaSource FileVersion="9" ArVersion="J4.93">
   <Aliases>
-    <ACLAliases />
+    <ACLAliases>
+      <ACL Id="1">
+        <ACE RoleName="Everyone" Access="0x005F" />
+        <ACE RoleName="Administrators" Access="0x017F" />
+        <ACE RoleName="Operator" Access="0x005F" />
+        <ACE RoleName="Service" Access="0x005F" />
+      </ACL>
+      <ACL Id="2">
+        <ACE RoleName="Everyone" Access="0x007F" />
+        <ACE RoleName="Administrators" Access="0x017F" />
+        <ACE RoleName="Operator" Access="0x007F" />
+        <ACE RoleName="Service" Access="0x007F" />
+      </ACL>
+      <ACL Id="3">
+        <ACE RoleName="Everyone" Access="0x005F" />
+        <ACE RoleName="Administrators" Access="0x015F" />
+        <ACE RoleName="Operator" Access="0x007F" />
+        <ACE RoleName="Service" Access="0x007F" />
+      </ACL>
+    </ACLAliases>
     <EURangeViolationAliases />
     <EURangesAliases>
       <EURanges Id="1">
@@ -11,10 +30,30 @@
           <High ValueProvider="Const">100</High>
         </EURange>
       </EURanges>
+      <EURanges Id="2">
+        <EURange>
+          <Low ValueProvider="Const">25</Low>
+          <High ValueProvider="Const">75</High>
+        </EURange>
+        <EURange Priority="1" RoleName="Service">
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">100</High>
+        </EURange>
+      </EURanges>
+      <EURanges Id="3">
+        <EURange>
+          <Low ValueProvider="Const">1</Low>
+          <High ValueProvider="Const">5</High>
+        </EURange>
+        <EURange Priority="1" RoleName="Service">
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">10</High>
+        </EURange>
+      </EURanges>
     </EURangesAliases>
     <EngineeringUnitAliases />
   </Aliases>
-  <DefaultView>
+  <DefaultView AclId="2">
     <Module Name="&lt;Default&gt;">
       <GlobalVariables>
         <Variable Name="gMieszadlo" />
@@ -39,9 +78,22 @@
         <Variable Name="Full" />
         <Variable Name="Tank" RecursiveEnable="2" />
         <Variable Name="TimerMix" RecursiveEnable="2" />
-        <Variable Name="AnalogValve" RecursiveEnable="2" />
+        <Variable Name="AnalogValve" RecursiveEnable="2">
+          <Variable AclId="3" AclInherit="2" Name="ValveRight" EURangesId="2" />
+          <Variable AclId="3" AclInherit="2" Name="ValveLeft" EURangesId="2" />
+        </Variable>
+        <Variable Name="WorkState" RecursiveEnable="2" />
+        <Variable Name="State" />
+        <Variable Name="Mode" />
+        <Variable Name="ToggleMode" />
+        <Variable Name="Manual" RecursiveEnable="2" />
       </Task>
       <Task Name="Tanks" />
+      <Task Name="Alarm">
+        <Variable AclId="2" AclInherit="2" Name="MpAlarmXCore_0" RecursiveEnable="2" />
+        <Variable AclId="3" AclInherit="2" Name="PressureTank1" EURangesId="3" />
+        <Variable AclId="3" AclInherit="2" Name="PressureTank2" EURangesId="3" />
+      </Task>
     </Module>
   </DefaultView>
 </OpcUaSource>

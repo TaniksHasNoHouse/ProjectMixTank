@@ -1,15 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="ContentAlarmPage" height="700" width="1130" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.AlarmList" id="AlarmList1" top="120" left="70" width="990" height="460" zIndex="0">
+    <Widget xsi:type="widgets.brease.AlarmList" id="AlarmList1" top="150" left="70" width="990" height="461" zIndex="0">
       <Widgets>
         <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListTimestamp" width="290" zIndex="0" columnType="timestamp" text="Timestamp" />
         <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListMessage" width="500" zIndex="1" text="Message" />
         <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListState" zIndex="2" columnType="state" text="State" />
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.Button" id="AcknowledgeButton" top="630" left="190" zIndex="1" text="Ack" />
-    <Widget xsi:type="widgets.brease.Button" id="AcknowledgeAllButton" top="630" left="410" zIndex="2" text="Ack All" />
+    <Widget xsi:type="widgets.brease.Button" id="AcknowledgeButton" top="640" left="190" zIndex="1" text="Ack" style="Operate" />
+    <Widget xsi:type="widgets.brease.Button" id="AcknowledgeAllButton" top="640" left="410" zIndex="2" text="Ack All" style="Operate" />
     <Widget xsi:type="widgets.brease.Label" id="LabelAlarmPage" top="29" left="70" width="160" height="51" zIndex="3" text="Alarm Page" textAlign="center" fontSize="24px" />
+    <Widget xsi:type="widgets.brease.Login" id="Login1" top="20" left="260" zIndex="4" />
   </Widgets>
 </Content>

@@ -1,0 +1,5 @@
+VAR
+	MpAlarmXCore_0 : MpAlarmXCore;
+	PressureTank1 : REAL;
+	PressureTank2 : REAL;
+END_VAR

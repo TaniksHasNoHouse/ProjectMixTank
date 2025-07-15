@@ -8,4 +8,12 @@ VAR CONSTANT
 END_VAR
 VAR
 	AnalogValve : AnalogValue;
+	WorkState : CurrentTask;
+	State : STRING[80];
+END_VAR
+(*Zmiana trybu pracy*)
+VAR
+	Mode : STRING[80];
+	ToggleMode : BOOL;
+	Manual : ManualControl;
 END_VAR
