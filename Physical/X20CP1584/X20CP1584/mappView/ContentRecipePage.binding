@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="ContentRecipePage_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:Save" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentRecipePage" widgetRefId="ToggleButtonSave" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:Load" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentRecipePage" widgetRefId="ToggleButtonLoad" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:Recipe.AnalogValveRight" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentRecipePage" widgetRefId="NumericInputVR" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:Recipe.TankLevel1" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentRecipePage" widgetRefId="NumericInputT1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:Recipe.AnalogValveLeft" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentRecipePage" widgetRefId="NumericInputVL" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:Recipe.TankLevel2" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentRecipePage" widgetRefId="NumericInputT2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:Recipe.TankLevel3" attribute="value" />
+<Target xsi:type="brease" contentRefId="ContentRecipePage" widgetRefId="NumericInputT3" attribute="value" />
+</Binding>
+</Bindings>
+</BindingsSet>

@@ -6,5 +6,6 @@
     <Object Type="File">Config.mappviewcfg</Object>
     <Object Type="Package">VisuDef</Object>
     <Object Type="Package">VisuInterface</Object>
+    <Object Type="File">ContentRecipePage.binding</Object>
   </Objects>
 </Package>

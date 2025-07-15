@@ -1,12 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="ContentRecipePage" height="700" width="1130" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.TextPad" id="TextPad1" top="60" left="90" width="950" height="440" zIndex="0" />
-    <Widget xsi:type="widgets.brease.Button" id="ButtonOpen" top="590" left="140" zIndex="1" text="Open" fontSize="20px" style="Command1" />
+    <Widget xsi:type="widgets.brease.TextPad" id="TextPad1" top="59" left="90" width="690" height="440" zIndex="1" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonOpen" top="590" left="140" zIndex="0" text="Open" fontSize="20px" style="Command1" />
     <Widget xsi:type="widgets.brease.Button" id="ButtonSave" top="590" left="290" zIndex="2" text="Save" fontSize="20px" style="Command1" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput1" top="520" left="530" zIndex="3" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput2" top="520" left="680" zIndex="4" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput3" top="520" left="830" zIndex="5" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput4" top="520" left="990" zIndex="6" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButtonSave" top="630" left="720" zIndex="3" text="Save" style="Operate" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButtonLoad" top="630" left="900" zIndex="4" text="Load" style="Operate" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputVR" top="380" left="960" zIndex="5" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputVL" top="430" left="960" zIndex="6" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputT1" top="480" left="960" zIndex="7" maxValue="10000" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputT2" top="530" left="960" zIndex="8" maxValue="10000" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputT3" top="580" left="960" zIndex="9" maxValue="10000" />
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="380" left="810" width="90" zIndex="10" text="Valve right:" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.Label" id="Label2" top="430" left="810" width="90" zIndex="11" text="Valve left:" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.Label" id="Label3" top="479" left="810" width="110" zIndex="12" text="Tank 1 level:" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.Label" id="Label4" top="530" left="810" width="110" zIndex="13" text="Tank 2 level:" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.Label" id="Label5" top="580" left="810" width="110" zIndex="14" text="Tank 3 level:" fontSize="16px" />
   </Widgets>
 </Content>

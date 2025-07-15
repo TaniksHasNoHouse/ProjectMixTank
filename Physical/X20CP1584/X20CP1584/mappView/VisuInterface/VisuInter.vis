@@ -10,6 +10,7 @@
   <BindingsSets>
     <BindingsSet refId="ContentMainPage_binding" />
     <BindingsSet refId="ContentAlarmPage_binding" />
+    <BindingsSet refId="ContentRecipePage_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ContentAlarmPage_eventbinding" />

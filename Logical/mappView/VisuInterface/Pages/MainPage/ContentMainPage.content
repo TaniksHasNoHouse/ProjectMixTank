@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="ContentMainPage" height="700" width="1130" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.NumericOutput" id="TankLvl1" top="120" left="200" zIndex="0" />
-    <Widget xsi:type="widgets.brease.NumericOutput" id="TankLvl2" top="180" left="200" zIndex="1" />
-    <Widget xsi:type="widgets.brease.NumericOutput" id="TankLvl3" top="240" left="200" zIndex="2" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="TankLvl1" top="120" left="200" zIndex="0" unit="{'metric':'LTR','imperial':'GLI','imperial-us':'GLL'}" unitAlign="right" textAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="TankLvl2" top="180" left="200" zIndex="1" unit="{'metric':'LTR','imperial':'GLI','imperial-us':'GLL'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="TankLvl3" top="240" left="200" zIndex="2" unit="{'metric':'LTR','imperial':'GLI','imperial-us':'GLL'}" unitAlign="right" />
     <Widget xsi:type="widgets.brease.Label" id="LabelPoziomCieczy" top="80" left="100" width="141" zIndex="3" text="Poziom cieczy:" textAlign="center" fontSize="20px" style="Information" />
-    <Widget xsi:type="widgets.brease.Label" id="LabelTank1" top="120" left="120" zIndex="4" text="Zbiornik 1" fontSize="16px" />
-    <Widget xsi:type="widgets.brease.Label" id="LabelTank2" top="180" left="120" zIndex="5" text="Zbiornik 2" fontSize="16px" />
-    <Widget xsi:type="widgets.brease.Label" id="LabelTank3" top="240" left="120" zIndex="6" text="Zbiornik 3" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelTank1" top="120" left="100" zIndex="4" text="Zbiornik 1" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelTank2" top="180" left="100" zIndex="5" text="Zbiornik 2" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelTank3" top="240" left="100" zIndex="6" text="Zbiornik 3" fontSize="16px" />
     <Widget xsi:type="widgets.brease.Label" id="LabelMainPage" top="29" left="70" width="160" height="51" zIndex="7" text="Main Page" fontSize="24px" />
     <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleStart" top="70" left="780" width="120" height="50" zIndex="8" text="Start" permissionOperate="['Operator', 'Service']" style="Operate" />
     <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleMix" top="140" left="780" width="120" height="50" zIndex="9" text="Mix" permissionOperate="['Operator', 'Service']" style="Operate" />
@@ -17,8 +17,8 @@
     <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleStop" top="70" left="940" width="120" height="50" zIndex="13" text="Stop" permissionOperate="['Operator', 'Service']" style="Operate" />
     <Widget xsi:type="widgets.brease.Label" id="LabelValve1" top="320" left="90" width="280" zIndex="14" text="Procent otwarcia zworu ZB3 prawego:" fontSize="16px" />
     <Widget xsi:type="widgets.brease.Label" id="LabelValve2" top="380" left="90" width="280" zIndex="15" text="Procent otwarcia zworu ZB3 lewego:" fontSize="16px" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="NumInputValve1" top="320" left="400" zIndex="16" value="50" permissionOperate="['Operator', 'Service']" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="NumInputValve2" top="380" left="400" zIndex="17" value="50" permissionOperate="['Operator', 'Service']" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumInputValve1" top="320" left="400" zIndex="16" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" value="50" permissionOperate="['Operator', 'Service']" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumInputValve2" top="380" left="400" zIndex="17" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" value="50" permissionOperate="['Operator', 'Service']" />
     <Widget xsi:type="widgets.brease.Label" id="LabelProcessControl" top="30" left="830" width="174" zIndex="18" text="Kontrola procesu:" textAlign="center" fontSize="20px" style="Information" />
     <Widget xsi:type="widgets.brease.Label" id="LabelValZB1" top="500" left="90" width="160" zIndex="19" text="Zawór zbiornika ZB1:" fontSize="16px" />
     <Widget xsi:type="widgets.brease.Label" id="LabelValZB2" top="550" left="90" width="160" zIndex="20" text="Zawór zbiornika ZB2:" fontSize="16px" />
@@ -36,10 +36,10 @@
     <Widget xsi:type="widgets.brease.BasicSlider" id="BasicSlider2" top="600" left="845" zIndex="32" maxValue="10" permissionOperate="['Operator', 'Service']" />
     <Widget xsi:type="widgets.brease.Label" id="LabelPressureTank1" top="410" left="590" width="180" zIndex="33" text="Ciśnienie w zbiorniku 1:" fontSize="16px" />
     <Widget xsi:type="widgets.brease.Label" id="LabelPressureTank2" top="410" left="890" width="180" zIndex="34" text="Ciśnienie w zbiorniku 2:" fontSize="16px" />
-    <Widget xsi:type="widgets.brease.NumericOutput" id="NOPressureT1" top="610" left="610" width="110" height="40" zIndex="35" />
-    <Widget xsi:type="widgets.brease.NumericOutput" id="NOPressureT2" top="610" left="920" zIndex="36" />
-    <Widget xsi:type="widgets.brease.RadialGauge" id="RadialGaugeVal2" top="440" left="900" width="161" height="161" zIndex="37" maxValue="10" text="Zbiornik 2" />
-    <Widget xsi:type="widgets.brease.RadialGauge" id="RadialGaugeVal1" top="440" left="600" width="161" height="161" zIndex="38" maxValue="10" text="Zbiornik 1" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NOPressureT1" top="610" left="610" width="110" height="40" zIndex="35" unit="{'metric':'BAR','imperial':'BAR','imperial-us':'BAR'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NOPressureT2" top="610" left="920" zIndex="36" unit="{'metric':'BAR','imperial':'BAR','imperial-us':'BAR'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.RadialGauge" id="RadialGaugeVal2" top="440" left="900" width="161" height="161" zIndex="37" maxValue="10" text="Zbiornik 2" unit="{'metric':'BAR','imperial':'BAR','imperial-us':'BAR'}" />
+    <Widget xsi:type="widgets.brease.RadialGauge" id="RadialGaugeVal1" top="440" left="600" width="161" height="161" zIndex="38" maxValue="10" text="Zbiornik 1" unit="{'metric':'BAR','imperial':'BAR','imperial-us':'BAR'}" />
     <Widget xsi:type="widgets.brease.ToggleSwitch" id="ToggleSwitch1" top="140" left="950" zIndex="39" permissionOperate="['Operator', 'Service']" />
     <Widget xsi:type="widgets.brease.TextOutput" id="TextOutputManual" top="180" left="950" zIndex="40" textAlign="center" />
     <Widget xsi:type="widgets.brease.Label" id="LabelManual" top="450" left="340" width="120" zIndex="41" text="Tryb ręczny" textAlign="center" fontSize="20px" />

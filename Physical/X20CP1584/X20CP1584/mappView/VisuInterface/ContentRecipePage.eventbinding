@@ -11,5 +11,15 @@
         </Action>
       </EventHandler>
     </EventBinding>
+    <EventBinding id="ContentRecipePage.ButtonSave.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentRecipePage" widgetRefId="ButtonSave" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="widgets.brease.TextPad.Action" contentRefId="ContentRecipePage" widgetRefId="TextPad1">
+            <Method xsi:type="widgets.brease.TextPad.Action.SaveAs" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
   </Bindings>
 </EventBindingSet>

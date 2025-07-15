@@ -20,6 +20,18 @@ PROGRAM _CYCLIC
 	MpRecipeXml_0();
 	MpRecipeRegPar_0();
 	MpRecipeUI_0();
+	
+	IF Save THEN
+		MpRecipeXml_0.Load := FALSE;
+		MpRecipeXml_0.Save := TRUE;
+		Save := FALSE;
+	END_IF;
+	
+	IF Load THEN
+		MpRecipeXml_0.Save := FALSE;
+		MpRecipeXml_0.Load := TRUE;
+		Load := FALSE;
+	END_IF;
 END_PROGRAM
 
 PROGRAM _EXIT

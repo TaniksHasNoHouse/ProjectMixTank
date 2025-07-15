@@ -94,6 +94,15 @@
         <Variable AclId="3" AclInherit="2" Name="PressureTank1" EURangesId="3" />
         <Variable AclId="3" AclInherit="2" Name="PressureTank2" EURangesId="3" />
       </Task>
+      <Task Name="Recipe">
+        <Variable Name="MpRecipeRegPar_0" RecursiveEnable="2" />
+        <Variable Name="MpRecipeUI_0" RecursiveEnable="2" />
+        <Variable Name="MpRecipeXml_0" RecursiveEnable="2" />
+        <Variable Name="Recipe" RecursiveEnable="2" />
+        <Variable Name="UIConnect" RecursiveEnable="2" />
+        <Variable Name="Load" />
+        <Variable Name="Save" />
+      </Task>
     </Module>
   </DefaultView>
 </OpcUaSource>
